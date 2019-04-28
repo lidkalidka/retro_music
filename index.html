@@ -117,28 +117,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
-    <script>
-        document.onscroll = () => {
-            const navbar = document.querySelector('#topNavbar');
-            
-            if (document.documentElement.scrollTop > navbar.clientHeight){
-                navbar.classList.add('scroll');
-            } else {
-                navbar.classList.remove('scroll');
-            }
-        };
-
-        document.querySelector('.navbar-toggler').addEventListener('click', function() {
-    
-            const collapse = document.querySelector('.collapse');
-
-            if (!collapse.classList.contains('show')){
-                document.querySelector('#topNavbar').classList.add('collapsed');
-            } else {
-                document.querySelector('#topNavbar').classList.remove('collapsed');
-            }
-        });
-    </script>
+    <script src="main.js"></script>
 </body>
 
 </html>
